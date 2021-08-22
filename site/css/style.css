@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: OCR A Std, monospace;
+}
+
+body
+{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1500px;
+	min-height: 1500px;
+	background: #fff;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+
+}
+
+.profile_text
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile_text .imgBx
+
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profile_text .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile_text h2
+{
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+.profile_text h2 span
+{
+	font-size: 0.65em;
+	font-weight: 300;
+}
+.contactInfo
+{
+	padding-top: 40px;
+}
+.left_side .title
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.left_side a
+{
+	color: #fff;
+}
+.contactInfo
+{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+	
+.contactInfo ul
+{
+	position: relative;
+}
+.contactInfo ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #fff;
+	/*color: #03a9f4;*/
+}
+.contactInfo ul li span
+{
+	color: #fff;
+	font-weight: 300
+}
+.contactInfo ul li span .fab, .fas, .far
+{
+	font-size: 24px;
+}
+.language
+{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.language ul li
+{
+	font-size: 1.2em;
+}
+.language ul li div
+{
+	font-size: 0.75em;
+	padding-top: 15px;
+	color: #fff;
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+.language ul li table
+{
+	position: relative;
+	font-size: 0.7em;
+	width: 92%;
+	color: #fff;
+	padding-top: 10px;
+}
+
+.language ul li table tr
+{
+	background: #004157;
+}
+.programming .percent
+{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #172119;
+	display: block;
+	margin-top: 5px;
+}
+.programming .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #106939;
+}
+.hobbies ul
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.hobbies ul li
+{
+	list-style: none;
+	color: #fff;
+	font-weight: 500;
+	margin: 10px 0;
+}
+.hobbies ul li .fa, .fas, .far
+{
+	color: #ddd;
+	font-size: 28px;
+}
+.container .right_side
+{
+	position: relative;
+	background: #fff;
+	padding: 40px;
+}
+.about
+{
+	margin-bottom: 50px;
+}
+.about:last-child
+{
+	margin-bottom: 0;
+}
+.titleR
+{
+	color: #314050;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+p
+{
+	color: #003147;
+}
+.about .box
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+.about .box .year_company
+{
+	min-width: 160px;
+}
+.about .box .year_company h5
+{
+	text-transform: uppercase;
+	color: #86888f;
+	font-weight: 600;
+}
+.about .box .text h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+}
+.certificate
+{
+	margin-bottom: 50px;
+}
+.certificate .box
+{
+	margin-bottom: 25px;
+}
+.certificate h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+}
+.certificate .uni
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 14px;
+}
+.certificate ul
+{
+	padding-top: 15px;
+	padding-left: 35px;
+	font-size: 0.85em;
+	line-height: 19px;
+}
+.certificate ul li
+{
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.certificate ul li .certificate_date
+{
+	font-size: 0.8em;
+	font-style: italic;
+	color: #003147;
+}
+.certificate_title
+{
+	color: #003147;
+}
+.verification_link
+{
+	font-size: 0.7em;
+}
+.research_interest ul
+{
+	padding-top: 5px;
+	padding-left: 35px;
+	margin: 5px 1px;
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 19px;
+	list-style: square outside none;
+}
+.research_interest ul li
+{
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.gcpa
+{
+	font-style: italic;
+	font-size: 0.85em;
+}
+.publication
+{
+	margin-bottom: 50px;
+}
+.publication ul
+{
+	padding-top: 5px;
+	padding-left: 35px;
+	font-size: 0.9em;
+	line-height: 19px;
+	color: #003147;
+}
+.publication ul li
+{
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.awards
+{
+	color: #003147;
+	margin-bottom: 50px;
+}
+.awards ul
+{
+	padding-top: 15px;
+	padding-left: 35px;
+	font-size: 0.85em;
+	line-height: 19px;
+}
+.awards ul li
+{
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.awards ul li .awards_items
+{
+	/*color: #505050;*/
+	/*color: #2b6580;*/
+	color: #003147;
+}
+
+.skills
+{
+	margin-bottom: 50px;
+}
+.skills .box ul li h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.skills .box ul li .text
+{
+	font-size: 0.8em;
+}
+.applied
+{
+	margin-bottom: 50px;
+}
+.applied .titleS
+{
+	margin-top: 20px;
+	color: #076999;
+}
+
+.applied:last-child
+{
+	margin-bottom: 0;
+}
+.applied .box
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+.applied .box .year
+{
+	min-width: 160px;
+}
+.applied .box .year h5
+{
+	position: relative;
+	text-transform: uppercase;
+	color: #86888f;
+	font-weight: 600;
+}
+.applied .box .year h5:nth-child(odd)
+{
+	/*text-align: center;*/
+	/*padding-left: 23%;*/
+}
+.applied .box .text h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+}
+.references
+{
+	margin-bottom: 50px;
+}
+.references .box ul li
+{
+	margin-top: 10px;
+	padding: 10px 0;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	color: #003147;
+	font-size: 14px;
+}
+.references ul li
+{
+	line-height: 19px;
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.references .box ul li .ref_name
+{
+	text-transform: capitalize;
+}
+.break
+{
+	padding-right: 5px;
+}
+
+/*.other .box ul li span
+{
+	font-size: 16px;
+	margin-top: 10px;
+}*/
+.other
+{
+	color: #003147;
+	margin-bottom: 50px;
+}
+.other .box ul li
+{
+	margin: 5px 1px;
+	list-style: square outside none;
+}
+.other .box ul li span
+{
+/*	padding-top: 15px;
+	padding-left: 35px;*/
+	font-size: 0.85em;
+	line-height: 19px;
+}
+.other .box ul
+{
+	padding-top: 5px;
+	padding-left: 35px;
+	margin: 5px 1px;
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 19px;
+	list-style: square outside none;
+}
+.other .box ul li p
+{
+	font-size: 0.75em;
+}
+@media (max-width:  1000px)
+{
+	.container
+	{
+		margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+	}
+	.hobbies ul
+	{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+
+@media (max-width:  600px)
+{
+	.about .box
+	{
+		flex-direction: column;
+	}
+	.field .box
+	{
+		flex-direction: column;
+	}
+}
