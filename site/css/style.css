@@ -6,7 +6,21 @@
   list-style: none;
   font-family: OCR A Std, monospace;
 }
-
+a
+{
+	text-decoration: none;
+	color: #003147;
+}
+.left_side a:hover
+{
+	text-decoration: underline;
+	color: yellow;
+}
+a:hover
+{
+	text-decoration: underline;
+	color: red;
+}
 body
 {
 	background: lightblue;
