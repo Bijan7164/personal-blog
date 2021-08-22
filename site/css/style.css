@@ -38,7 +38,7 @@ body
 	background: #fff;
 	margin: 50px;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr;
 	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -103,7 +103,7 @@ body
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 1.3px;
 	margin-bottom: 20px;
 }
 .left_side a
@@ -176,6 +176,26 @@ body
 {
 	background: #004157;
 }
+.programming i
+{
+	position: relative;
+	padding-right: 15px;
+}
+.programming ul li .text img
+{
+	width: 45px;
+	height: 25px;
+	padding-right: 15px;
+}
+.programming ul li:nth-child(3) .text img
+{
+	width: 35px;
+	padding-right: 10px;
+}
+.programming ul li:last-child
+{
+	margin-bottom: 50px;
+}
 .programming .percent
 {
 	position: relative;
@@ -193,10 +213,29 @@ body
 	height: 100%;
 	background: #106939;
 }
+.programming .icon_box
+{
+border-top: 1px dashed rgba(255, 255, 255, 0.2);
+padding-top: 10px;
+}
+.programming .icon_box ul
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.programming .icon_box ul img
+{
+	width: 30px;
+	height: 30px;
+}
+.programming .icon_box ul li:nth-child(6) img
+{
+	width: 35px;
+}
 .hobbies ul
 {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 .hobbies ul li
 {
@@ -238,7 +277,7 @@ p
 .about .box
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin: 20px 0;
 }
 .about .box .year_company
@@ -389,6 +428,8 @@ p
 {
 	margin-top: 20px;
 	color: #076999;
+	/*text-decoration: underline;*/
+	font-weight: 1000
 }
 
 .applied:last-child
@@ -398,7 +439,7 @@ p
 .applied .box
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin: 20px 0;
 }
 .applied .box .year
@@ -488,7 +529,47 @@ p
 {
 	font-size: 0.75em;
 }
-@media (max-width:  1000px)
+@media(min-width: 768px)
+{
+	.programming .icon_box ul
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.hobbies ul
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.about .box
+{
+	flex-direction: row;
+}
+.field .box
+{
+	flex-direction: row;
+}
+}
+@media (min-width: 992px)
+{
+	.container
+	{
+		margin: 10px;
+    grid-template-columns: 1fr 2fr;
+	}
+	.programming .icon_box ul
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.hobbies ul
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+}
+
+/*@media (max-width:  1000px)
 {
 	.container
 	{
@@ -499,10 +580,10 @@ p
 	{
 		grid-template-columns: repeat(2,1fr);
 	}
-}
+}*/
 
 
-@media (max-width:  600px)
+/*@media (max-width:  600px)
 {
 	.about .box
 	{
@@ -512,4 +593,4 @@ p
 	{
 		flex-direction: column;
 	}
-}
+}*/
