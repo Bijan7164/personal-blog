@@ -8,8 +8,20 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script>
+		function PDFgenerator(){
+			var doc = new jsPDF();
+
+			// Save the PDF
+			doc.save('document.pdf')
+		}
+	</script>
+
 </head>
 <body>
+	<!-- <button onclick="PDFgenerator();">Click to Generate PDF		
+	</button> -->
 	<div class="container">
 		<div class="left_side">
 			<div class="profile_text">
@@ -121,21 +133,24 @@
 						<li>
 							<span class="icon"><i class="fab fa-github"></i></span>
 						</li>
-						<!-- <li>
-							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Breezeicons-apps-48-sublime-text.svg/640px-Breezeicons-apps-48-sublime-text.svg.png"></span>
-						</li> -->
-						<!-- <li>
-							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/The_GIMP_icon_-_gnome.svg/120px-The_GIMP_icon_-_gnome.svg.png	"></span>
-						</li> -->
+						<li>
+							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Dask_logo.svg/741px-Dask_logo.svg.png"></span>
+						</li>
+						<li>
+							<span class="icon"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAAeFBMVEX///8TB1QAAEb/ygDnBIgPAFLNzNYTAFnQ0NgMAFcAAETb2eP39/oUBlfV1N7/xwDmAID/9tfLydcjG17/4Yz//vbCwM3ykcL61OfoBIwyKmgAADYAAE0AAErx8PTIxdT/+un/34T85/Lyir/lAHv50eX+9fkpH2Ma8J+4AAACEklEQVR4nO3dzVIaQRSAUYNCEIGoiYmJivnP+79hFrmLVHELZ6pnmG483xqaPruh5lb32ZkkSZIkSZIkvb52z7dZU2+rT4uH2X6rx6m31afF7M1+87dTb6tPCDWEUEMINYRQQ5MS1tu0nqtMSrhKn26e1v1WmZawyn58g4DQL4QIoSyECKEshAihLIQIoSyECKEshAihLIQIoSyECKEshAihLIQIoSyECOFA6cvM5a4nYb29yjoO4WmVvM58WPQkbF8e+RqPcDlPVp4t+xLS/W0QEBCqI8yTLpsizN8n/WmJ0CEEBAQEBAQEBIT2CF+/fci6a4hw8y7rvC3CeRYCAgICAgICAgICAgICwlCEtJYIdzdp/3+kdkKHToFQ+RjJMCEcCKF7CAdC6B7CgRC6Nylh9zGtJUJ6uNCsnsOFhhkvPAHC9x+fsloi/Pp5nXTREuH++iLpMwICAgICAgICAgICAgKC/87R7/u0lggdQkBAQEBAQEB4dYQON67UTqh9KuwkDlRBQED4R8gOF5o3Rdh8yepLGO0ez6MNPO+WQ9w3NilhvBAihLIQIoSyECKEshAihLIQIoSyECKEshAihLIQIoSyECKEshAihLIQIoSyEKJt+lL0SNeADUR4TG9cGWXHew10AkPP4aRBO9ohEuOFUEMINYRQQwg1dAKEDvd41t5t2u7lL0qSJEmSJEnSyfUXeomSFq0EzbkAAAAASUVORK5CYII="></span>
+						</li>
 						<li>
 							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/120px-Scikit_learn_logo_small.svg.png"></span>
 						</li>
 						<li>
 							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minitab_Logo.svg/90px-Minitab_Logo.svg.png"></span>
 						</li>
-						<!-- <li>
-							<span class="icon"><i class="fas fa-file-powerpoint"></i></span>
-						</li> -->
+						<li>
+							<span class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1200px-NumPy_logo_2020.svg.png"></span>
+						</li>
+						<li>
+							<span class="icon"> <img src="https://numfocus.org/wp-content/uploads/2018/09/xarray-logo-square.png"></span>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -188,7 +203,7 @@
 					</div>
 					<div class="text">
 						<h4>Agricultural Meteorology in the University of Tehran</h4>
-						<p id="thesis">“Evaluation the efficiency of solar radiation models using satellite imagery in three climatic types of Iran.” <em>(Supervisor: Dr.Zahra Agha Shariatmadari)</em>.</p>
+						<p id="thesis">“Evaluation of the efficiency of solar radiation models using satellite imagery in three climatic types of Iran.” <em>(Supervisor: Dr.Zahra Agha Shariatmadari)</em>.</p>
 						<p class="gcpa">CGPA 3.75/4 (17.32/20)</p>
 					</div>
 				</div>
@@ -309,7 +324,7 @@
 					</div>
 					<div class="text">
 						<h4>Junior Data Analyst</h4>
-						<p>Although I am not expert in economy, I had a different and informative time, dealing with monetary data. Huge amount of daily records, a wide variety of indices, and predicting the short-term trend of the market was at first enjoyable, but honestly, I prefer researching to  making money as the latter seemed a monotonic routine to me, while I seek challenges most of the times.</p>
+						<p>Although I am not an expert in economy, I had a different and informative time, dealing with monetary data. Huge amount of daily records, a wide variety of indices, and predicting the short-term trend of the market was at first enjoyable, but honestly, I much prefer researching to  making money as the latter seemed like a dull routine to me, while I seek challenges most of the time.</p>
 					</div>
 				</div>
 				<div class="box">
@@ -319,7 +334,7 @@
 					</div>
 					<div class="text">
 						<h4>Pistachio Grower</h4>
-						<p>Our family farm, in the countryside of a little town, Ferdows, used to be where I spend a long and quality time. It is still one of the biggest Pistachio garden</p>
+						<p>Our family farm, in the countryside of a little town, Ferdows, used to be where I spent long and quality time. It is still one of the biggest Pistachio gardens in the area.</p>
 					</div>
 				</div>
 				<div class="box">
@@ -329,7 +344,7 @@
 					</div>
 					<div class="text">
 						<h4>Mushroom cultivator</h4>
-						<p>Had a short and expensive experience, but fruitfull one, during which I faced the consequences of general policy and some problematic decision making although I am still in favour of fungiculture.</p>
+						<p>Had a short and expensive experience, albeit a fruitfull one, during which I faced the consequences of general policy and some problematic decision making, yet I am still in favour of fungiculture.</p>
 					</div>
 				</div>
 				<div class="box">
@@ -339,7 +354,7 @@
 					</div>
 					<div class="text">
 						<h4>Assistant Transport Fleet Manager</h4>
-						<p>As my first occupation, I found out how to interact with the others in a serious manner and a real workplace and take responsibility of something. However, it was not related to my major; so that, I consider it just as a temporary job.</p>
+						<p>As my first occupation, I found out how to interact with the others in a serious manner and a real workplace and how to make responsibility for something. However, it was not related to my major, so that, I considered it just a temporary job.</p>
 					</div>
 				</div>
 			</div>
@@ -354,7 +369,7 @@
 						</div>
 						<div class="text">
 							<h4>Measuring the characteristics of all rivers in the Mashhad Basin</h4>
-							<p>Funded by Khorasan-eh Razavi province water organization</p>
+							<p>Funded by Khorasan-eh Razavi Province Water Sewage Department organization</p>
 						</div>
 					</div>
 					<div class="box">
@@ -390,7 +405,7 @@
 							<span class="awards_items">Recipient of a full scholarship from the University of Tehran</span>
 						</li>
 						<li>
-							<span class="awards_items">Ranked 2 nd place in the National Ph.D Exam in Agrometeorology</span>
+							<span class="awards_items">Ranked 2<sup>nd</sup> in the National Ph.D Exam in Agrometeorology</span>
 						</li>
 						<li>
 							<span class="awards_items">Recognized and honored for top 1% ranking on the National Entrance Exam</span>
@@ -407,7 +422,11 @@
 				<div class="box">
 					<ul>
 						<li>
-							<span>Awarded as the best actor and for performing in the best drama in national festival for children's theatre</span>
+							<span>Performing in the winner drama in national festival for children's theatre</span>
+							<p>(Zahedan National Theatre Festival for Children and Adolescents 2001)</p>
+						</li>
+						<li>
+							<span>Received the best actor award for performing in a drama in the national festival for children's theatre</span>
 							<p>(Zahedan National Theatre Festival for Children and Adolescents 2001)</p>
 						</li>
 						<li>
