@@ -34,12 +34,14 @@ body
    width:100%;
    height:auto;
    margin-left: 50px;
+   margin-right: 50px;
    padding: 20px;
    padding-left: 40px;
    background: #003147;
    color: #fff;
 	 padding-top: 35px;
 	 max-width: 1500px;
+	 min-width: 471px;
  }
 
 #footer ul
@@ -50,6 +52,11 @@ body
 #footer ul li
 {
 	padding-top: 15px;
+}
+#footer ul li:last-child
+{
+	padding-top: 5px;
+	width: 100%;
 }
 #footer a
 {
@@ -608,6 +615,10 @@ p
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 }
+#footer ul li:last-child
+{
+	width: 200%;
+}
 }
 @media (min-width: 992px)
 {
@@ -636,6 +647,10 @@ p
 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+#footer ul li:last-child
+{
+	width: 200%;
 }
 }
 
