@@ -24,10 +24,41 @@ a:hover
 body
 {
 	background: lightblue;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+}
+#footer{
+   display: felx;
+   bottom:10px;
+   width:100%;
+   height:auto;
+   margin-left: 50px;
+   padding: 20px;
+   padding-left: 40px;
+   background: #003147;
+   color: #fff;
+	 padding-top: 35px;
+	 max-width: 1500px;
+ }
+
+#footer ul
+{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+#footer ul li
+{
+	padding-top: 15px;
+}
+#footer a
+{
+	color: #fff;
+}
+#footer a:hover
+{
+	text-decoration: underline;
+	color: red;
 }
 .container
 {
@@ -37,6 +68,7 @@ body
 	min-height: 1500px;
 	background: #fff;
 	margin: 50px;
+	margin-bottom: 0;
 	display: grid;
 	grid-template-columns: 1fr;
 	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -396,10 +428,11 @@ p
 	line-height: 19px;
 	color: #003147;
 }
-.publication ul li
+.publication ul li, a
 {
 	margin: 5px 1px;
 	list-style: square outside none;
+	color: #003147;
 }
 .awards
 {
@@ -549,6 +582,7 @@ p
 {
 	font-size: 0.75em;
 }
+
 @media(min-width: 768px)
 {
 	.programming .icon_box ul
@@ -569,12 +603,18 @@ p
 {
 	flex-direction: row;
 }
+#footer ul
+{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
 }
 @media (min-width: 992px)
 {
 	.container
 	{
 		margin: 10px;
+		margin-bottom: 0;
     grid-template-columns: 1fr 2fr;
 	}
 	.programming .icon_box ul
@@ -586,6 +626,16 @@ p
 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+}
+#footer
+{
+	margin: 10px;
+	margin-top: 0;
+}
+#footer ul
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 }
 
