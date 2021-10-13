@@ -74,8 +74,8 @@ body
 	max-width: 1500px;
 	min-height: 1500px;
 	background: #fff;
-	margin: 50px;
-	margin-bottom: 0;
+/*	margin: 50px;
+	margin-bottom: 0;*/
 	display: grid;
 	grid-template-columns: 1fr;
 	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -290,6 +290,7 @@ padding-top: 10px;
 {
 	height: 40px;
 	width: 60px;
+	margin-left: -10px;
 }
 .hobbies ul
 {
@@ -400,6 +401,7 @@ p
 .verification_link
 {
 	font-size: 0.7em;
+	color: #633ea3;
 }
 .research_interest ul
 {
